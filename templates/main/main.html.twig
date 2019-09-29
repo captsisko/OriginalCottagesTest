@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    testing
+    {% for ship in ships %}
+        {{ ship.hail() }}
+    {% endfor %}
+{% endblock %}
