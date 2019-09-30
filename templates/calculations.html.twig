@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+
+    <div>This function uses an argument supplied in the url to create the required array. Just supply an argument in the format: <a href="http://originalcottagetest.com/index.php/calculations/15">http://originalcottagetest.com/index.php/calculations/15</a></div>
+
+    <h1>Calculations Page</h1>
+    <b>Sequence of numbers:</b> {{ array|join(', ') }}
+    <br>
+    <b>Median:</b> {{ median }}
+    <br>
+    <b>Mean:</b> {{ mean }}
+{% endblock %}
