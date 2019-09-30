@@ -49,8 +49,9 @@ class __TwigTemplate_48b9dbe384ce9d14bdaab260849e11e08df99b3620a76eb6c7554635caf
 
         // line 4
         echo "    <h1>Factorial Central</h1>
+    <p>Please provide the <i>n</i> argument for the factorial in the form of this example: <a href=\"http://originalcottagetest.com/index.php/6\">http://originalcottagetest.com/index.php/6</a></p>
     Factorial of <b>";
-        // line 5
+        // line 6
         echo twig_escape_filter($this->env, ($context["n"] ?? $this->getContext($context, "n")), "html", null, true);
         echo "</b>: <u>";
         echo twig_escape_filter($this->env, ($context["factorial"] ?? $this->getContext($context, "factorial")), "html", null, true);
@@ -73,7 +74,7 @@ class __TwigTemplate_48b9dbe384ce9d14bdaab260849e11e08df99b3620a76eb6c7554635caf
 
     public function getDebugInfo()
     {
-        return array (  54 => 5,  51 => 4,  45 => 3,  29 => 1,);
+        return array (  55 => 6,  51 => 4,  45 => 3,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -90,6 +91,7 @@ class __TwigTemplate_48b9dbe384ce9d14bdaab260849e11e08df99b3620a76eb6c7554635caf
 
 {% block body %}
     <h1>Factorial Central</h1>
+    <p>Please provide the <i>n</i> argument for the factorial in the form of this example: <a href=\"http://originalcottagetest.com/index.php/6\">http://originalcottagetest.com/index.php/6</a></p>
     Factorial of <b>{{ n }}</b>: <u>{{ factorial }}</u>
 {% endblock %}", "factorial/factorial.html.twig", "/var/www/OriginalCottageTest/templates/factorial/factorial.html.twig");
     }
