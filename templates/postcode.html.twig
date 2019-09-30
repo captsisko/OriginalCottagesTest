@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+
+
+
+
+
+
+{% block body %}
+    <div><p>Please provide a postcode argument as part of a url in the following form: <a href="http://originalcottagetest.com/index.php/w11%203by">http://originalcottagetest.com/index.php/w11 3by</a></p>
+    Postcode authentication powered by the <a href="https://postcodes.io/" target="_blank">postcodes.io</a> API.</div>
+    <h1>Postcode Authenticating System:</h1>
+
+    {% if feedback.result %}
+        <b>{{ postcode|capitalize }}</b> is valid!
+    {% elseif not feedback.result %}
+        <b>{{ postcode|capitalize }}</b> is <u>NOT</u> valid!
+    {% endif %}
+
+{% endblock %}

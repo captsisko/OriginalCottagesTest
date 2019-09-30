@@ -24,7 +24,6 @@ return [
     '.service_locator.m8PwGkX' => true,
     '.service_locator.m8PwGkX.router.cache_warmer' => true,
     '.service_locator.xOjM7Yp' => true,
-    'App\\Ship' => true,
     'Doctrine\\Common\\Annotations\\Reader' => true,
     'Psr\\Cache\\CacheItemPoolInterface' => true,
     'Psr\\Container\\ContainerInterface' => true,
